@@ -50,7 +50,7 @@ public class NDEFWriteMiFareTagActivity extends Activity {
                 filter,
         };
         
-        // Setup a tech list for all NfcF tags
+        // Setup a tech list for all MiFare Classic tags
         mTechLists = new String[][] { new String[] { MifareClassic.class.getName() } };
 
         final Button writeButton = (Button) findViewById(R.id.buttonWrite);
