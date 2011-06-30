@@ -92,7 +92,9 @@ public class NDEFWriteMiFareTagActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        mAdapter.enableForegroundDispatch(this, mPendingIntent, mFilters, mTechLists);
+        if(mAdapter != null) {
+        	mAdapter.enableForegroundDispatch(this, mPendingIntent, mFilters, mTechLists);
+        }
     }
 
     /* Called when a tag is found */
@@ -104,7 +106,9 @@ public class NDEFWriteMiFareTagActivity extends Activity {
     @Override
     public void onPause() {
         super.onPause();
-       	mAdapter.disableForegroundDispatch(this);
+        if(mAdapter != null) {
+        	mAdapter.disableForegroundDispatch(this);
+        }
     }
     
    
