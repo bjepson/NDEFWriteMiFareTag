@@ -1,0 +1,8 @@
+Here is a minimal example of writing an NDEF message to a MiFare tag 
+from Android.
+
+This is based on Wataloo Takemura's NDEFWriter 
+(https://github.com/wataloo/NDEFWriter), but has been simplified to 
+show the minimal code needed to write an NDEF message.
+
+- Brian
